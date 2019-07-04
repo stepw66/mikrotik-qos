@@ -5,6 +5,9 @@ UL=2145728
 OI=wlan1
 
 cat <<EOF
+/ip firewall filter
+set [find where action=fasttrack-connection] disabled=no
+
 /queue type
 :do { remove qos } on-error={}
 

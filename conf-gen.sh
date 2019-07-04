@@ -6,6 +6,9 @@ OI=wlan1
 II=bridge
 
 cat <<EOF
+/ip firewall filter
+set [find where action=fasttrack-connection] disabled=yes
+
 /queue type
 :do { remove qos } on-error={}
 add kind=sfq name=qos
