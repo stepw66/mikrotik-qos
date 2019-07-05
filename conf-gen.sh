@@ -1,7 +1,7 @@
 #!/bin/sh
 
-DL=7000000
-UL=3545728
+DL=5000000
+UL=3000000
 OI=wlan1
 II=bridge
 
